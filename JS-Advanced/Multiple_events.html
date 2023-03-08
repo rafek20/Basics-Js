@@ -1,0 +1,26 @@
+<p> Adding multiple events of different type to the same element. </p>  
+<button id = "btn"> Click</button>  
+<p id = "para"></p>  
+<script>  
+function fun() {  
+    btn.style.width = "50px";  
+    btn.style.height = "25px";  
+    btn.style.background = "brown";  
+    btn.style.color = "Yellow";  
+}  
+   
+function fun1() {  
+   alert("CLICKING EVENT");  
+  
+}  
+function fun2() {  
+    btn.style.width = "";  
+    btn.style.height = "";  
+    btn.style.background = "";  
+    btn.style.color = "";  
+}  
+var mybtn = document.getElementById("btn");  
+mybtn.addEventListener("mouseover", fun);  
+mybtn.addEventListener("click", fun1);  
+mybtn.addEventListener("mouseout", fun2);  
+</script>  

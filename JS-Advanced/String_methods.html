@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<p> Adding multiple events of different type to the same element. </p>  
+<button id = "btn"> Click</button>  
+<p id = "para"></p>  
+<script>
+var name="Mohamed Rafek";  
+function fun1() {  
+    document.writeln(name.charAt(5)); //charAt method// 
+    document.writeln("<br>CharCodeAt="+name.charCodeAt(2));
+}    
+var mybtn = document.getElementById("btn");  
+mybtn.addEventListener("click", fun1);   
+</script>  

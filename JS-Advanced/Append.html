@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<div id="d">
+<p>Welcome to Elysium Academy</p>
+<button onclick="disp()">Append</button>
+</div>
+
+<script>
+function disp()
+{
+const txt = document.createElement("p");
+const add = document.createTextNode("Full Stack Development-MERN");
+txt.appendChild(add);
+document.getElementById("d").appendChild(txt);
+}
+</script>
+
+</body>
+</html>

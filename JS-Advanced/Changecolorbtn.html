@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var count = 1;
+      function fun(btn) {
+        var b = document.getElementById(btn);
+        if (count == 0) {
+          b.style.backgroundColor = "green";
+          count = 1;
+        } else {
+          b.style.backgroundColor = "gray";
+          count = 0;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <button id="btn" onclick="fun('btn')">submit</button>
+  </body>
+</html>

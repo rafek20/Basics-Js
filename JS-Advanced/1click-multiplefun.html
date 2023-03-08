@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<body>
+    <button id="btn">Arithmetic</button>
+    <p id="b"></p>
+    <p id="c"></p>
+    <p id="d"></p>
+    <p id="e"></p>
+    <p id="f"></p>
+    <script>
+        var x=10;
+        var y=5;
+        function f0(){
+            document.getElementById("b").innerHTML="Sum="+(x+y);
+        }
+        function f1(){
+            document.getElementById("c").innerHTML="Sub="+(x-y);
+        }
+        function f2(){
+            document.getElementById("d").innerHTML="Multiply="+(x*y);
+        }
+        function f3(){
+            document.getElementById("e").innerHTML="Divide="+(x/y);
+        }
+        function f4(){
+            document.getElementById("f").innerHTML="Modulo="+(x%y);
+        }
+        var mybtn=document.getElementById("btn");
+        mybtn.addEventListener("click",f0);
+        mybtn.addEventListener("click",f1);
+        mybtn.addEventListener("click",f2);
+        mybtn.addEventListener("click",f3);
+        mybtn.addEventListener("click",f4);
+</script>
+</body>
